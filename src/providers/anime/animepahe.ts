@@ -16,9 +16,10 @@ import { USER_AGENT } from '../../utils';
 
 class AnimePahe extends AnimeParser {
   override readonly name = 'AnimePahe';
-  protected override baseUrl = 'https://animepahe.com';
-  protected override logo = 'https://animepahe.com/pikacon.ico';
+  protected override baseUrl = 'https://animepahe.si';
+  protected override logo = 'https://animepahe.si/pikacon.ico';
   protected override classPath = 'ANIME.AnimePahe';
+
 
   // private readonly sgProxy = 'https://cors.consumet.stream';
 
@@ -250,7 +251,7 @@ class AnimePahe extends AnimeParser {
 
   private Headers(sessionId: string | false) {
     return {
-      authority: 'animepahe.com',
+      authority: 'animepahe.si',
       accept: 'application/json, text/javascript, */*; q=0.01',
       'accept-language': 'en-US,en;q=0.9',
       cookie: '__ddg2_=;',
